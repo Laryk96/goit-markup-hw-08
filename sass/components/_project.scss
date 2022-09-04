@@ -1,0 +1,73 @@
+.project {
+  @include flex-gap;
+  flex-wrap: wrap;
+}
+
+.project__item {
+  flex-basis: calc((100% - 30px * 2) / 3);
+  background-color: $card-bgd;
+}
+
+.project__link {
+  display: block;
+  text-decoration: none;
+  
+  transition: box-shadow 250ms $cubic;
+  
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.project__tumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.project__overlay {
+  position: absolute;
+  @include centering-flex;
+  padding: 63px 24px;
+
+  bottom: -1;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  font-size: 18px;
+  line-height: 1.156;
+  letter-spacing: 0.03em;
+  color: text(other-white);
+  background-color: overlay(sky);
+
+  transition: transform 250ms $cubic;
+
+  .project__link:hover &,
+  .project__link:focus & {
+    transform: translateY(-100%);
+  }
+}
+
+.project__desc {
+  padding: 20px 24px;
+
+  @include border-desc();
+}
+
+.project__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: text(titel-black);
+  margin-bottom: 4px;
+}
+
+.project__label {
+  font-size: 16px;
+  line-height: 1.85;
+  letter-spacing: 0.03em;
+  color: text(main-gray);
+}

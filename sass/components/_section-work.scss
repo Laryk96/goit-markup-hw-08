@@ -1,0 +1,24 @@
+.work{
+  @include flex-gap;
+}
+
+.work__tumb {
+  position: relative;
+}
+
+.work__overlay {
+  @include centering-flex;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 70px;
+  width: 100%;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: text(other-white);
+  background-color: overlay(dark);
+}

@@ -1,0 +1,59 @@
+
+// btn-main
+
+.button-form {
+  @extend %btn;
+  padding: 10px 32px;
+  min-width: 216px;
+}
+
+//  btn-subscribe
+
+.btn-subscribe {
+  @extend %btn;
+  @include centering-flex();
+  min-width: 200px;
+  padding: 10px 28px;
+}
+.btn-subscribe__icon {
+  margin-left: 10px;
+  fill: currentColor;
+}
+
+// btn-send
+
+.btn-send {
+  @extend %btn;
+  @include centering-margen();
+  min-width: 200px;
+  padding: 10px 52px;
+}
+
+//  btn-close
+
+.btn-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: btn(main-white);
+  color: icon(close-black);
+  cursor: pointer;
+
+  &:hover {
+    color: $hover-blue;
+  }
+  &:active {
+    background-color: btn(active-blue);
+  }
+  transition: color 250ms $cubic,
+  background-color 150ms $cubic;
+}
+
+.btn-close__icon {
+  fill: currentColor;
+}

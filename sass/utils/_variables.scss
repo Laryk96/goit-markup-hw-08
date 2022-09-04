@@ -1,0 +1,106 @@
+/**
+  |============================
+  |    geometry
+  |============================
+*/
+
+$gap: (
+  "items": 3,
+  "indent": 30px,
+);
+@function gap($key) {
+  @return map-get($gap, $key);
+}
+
+$header-height: 80px;
+
+/**
+  |============================
+  |  Color
+  |============================
+*/
+
+$text-color: (
+  "main-gray": #757575,
+  "titel-black": #212121,
+  "other-white": #ffffff,
+  "footer-contact": rgba(255, 255, 255, 0.6),
+);
+@function text($key) {
+  @return map-get($text-color, $key);
+}
+
+$logo-color: (
+  "header-black": #000000,
+  "footer-white": #ffffff,
+  "label": #2196f3,
+);
+@function logo($key) {
+  @return map-get($logo-color, $key);
+}
+
+$btn-color: (
+  "main-white": #ffffff,
+  "filter-black": #212121,
+  "bgd-filter": #f5f4fa,
+  "bgd-blue": #2196f3,
+  "active-blue": #188ce8,
+);
+@function btn($key) {
+  @return map-get($btn-color, $key);
+}
+
+$icon-color: (
+  "bgd-footer-gray": rgba(255, 255, 255, 0.1),
+  "fill-gray": #afb1b8,
+  "active-blue": #2196f3,
+  "close-black": #000,
+  "icon-black": #212121,
+  "check-white": #ffffff,
+);
+@function icon($key) {
+  @return map-get($icon-color, $key);
+}
+
+$overlay-color: (
+  "dark": rgba(47, 48, 58, 0.8),
+  "sky": rgba(33, 150, 243, 0.9),
+);
+@function overlay($key) {
+  @return map-get($overlay-color, $key);
+}
+
+$border-special-color: #eeeeee;
+
+$hover-blue: #2196f3;
+
+$bgd-footer: #2f303a;
+
+$placeholder: rgba(117, 117, 117, 0.5);
+
+$backdrop-dark: rgba(0, 0, 0, 0.2);
+
+$section-white: #fff;
+
+$card-bgd: #fff;
+
+$alt-bgd: #c4c4c4;
+
+$team-bgd: #f5f4fa;
+
+/**
+  |============================
+  | Font
+  |============================
+*/
+
+$font-main: "Roboto", sans-serif;
+$font-logo: "Raleway", sans-serif;
+
+/**
+  |============================
+  |  Animation
+  |============================
+*/
+
+$cubic: cubic-bezier(0.4, 0, 0.2, 1);

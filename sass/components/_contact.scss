@@ -1,0 +1,32 @@
+.contact {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  gap: 50px;
+
+  text-decoration: none;
+  list-style: none;
+}
+
+.contact__link {
+  display: flex;
+  align-items: center;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
+  color: text(main-gray);
+  text-decoration: none;
+
+  transition: color 250ms $cubic;
+
+  &:hover,
+  &:focus-visible {
+    color: $hover-blue;
+  }
+}
+.contact__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}

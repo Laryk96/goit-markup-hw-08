@@ -1,0 +1,33 @@
+.network {
+  @include centering-flex;
+  gap: 10px;
+
+  list-style: none;
+}
+
+.network__item {
+}
+
+.network__link {
+  @include centering-flex;
+  color: icon(fill-gray);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  transition: color 250ms $cubic, background-color 250ms $cubic;
+
+  &:hover,
+  &:focus {
+    background-color: $hover-blue;
+    color: #fff;
+  }
+}
+
+.network__link--bgd {
+  background-color: icon(bgd-footer-gray);
+}
+
+.network__icon {
+  fill: currentColor;
+}

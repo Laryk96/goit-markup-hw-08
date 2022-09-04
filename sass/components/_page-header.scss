@@ -1,0 +1,18 @@
+.page-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  background-color: $section-white;
+  border-bottom: 1px solid $border-special-color;
+  z-index: 2;
+}
+
+.page-header__container {
+  height: $header-height;
+  display: flex;
+}
+.page-header__nav {
+  display: flex;
+  align-items: center;
+}

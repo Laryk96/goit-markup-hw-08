@@ -1,0 +1,30 @@
+.client {
+  @include flex-gap;
+}
+
+.client__item {
+  width: 170px;
+  height: 92px;
+}
+
+.client__link {
+  @include centering-flex;
+
+  width: 100%;
+  height: 100%;
+
+  border: 1px solid icon(fill-gray);
+  border-radius: 4px;
+  color: icon(fill-gray);
+
+  transition: color 250ms $cubic, border-color 250ms $cubic;
+
+  &:hover,
+  &:focus {
+    border-color: $hover-blue;
+    color: $hover-blue;
+  }
+}
+.client__icon {
+  fill: currentColor;
+}

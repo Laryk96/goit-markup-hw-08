@@ -1,0 +1,37 @@
+
+.features {
+  @include flex-gap;
+}
+
+.features__item {
+  max-width: 270px;
+}
+
+.features__bgd {
+  @include centering-flex;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  height: 120px;
+  width: 100%;
+
+  background-color: btn(bgd-filter);
+}
+
+.features__icon {
+}
+
+.features__title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: text(titel-black);
+}
+.features__desc {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+}

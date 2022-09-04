@@ -1,0 +1,22 @@
+@mixin border-desc($width: 1px, $type: solid, $color: $border-special-color) {
+  border-left: $width $type $color;
+  border-bottom: $width $type $color;
+  border-right: $width $type $color;
+}
+
+@mixin centering-flex($type: flex) {
+  display: $type;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin centering-margen($type: block) {
+  display: $type;
+  margin: 0 auto;
+}
+
+@mixin flex-gap($gap:30px) {
+  display: flex;
+  gap: $gap;
+  list-style: none;
+}

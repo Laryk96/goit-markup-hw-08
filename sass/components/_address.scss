@@ -1,0 +1,31 @@
+.address {
+  font-style: normal;
+}
+
+.address__list {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.address__link {
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: text(footer-contact);
+  text-decoration: none;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $hover-blue;
+  }
+}
+
+.address__link--color {
+  color: text(other-white);
+}
+  
