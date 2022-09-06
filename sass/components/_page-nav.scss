@@ -1,31 +1,42 @@
 .site-nav {
-  display: flex;
-  list-style: none;
-  gap: 50px;
+  // display: flex;
+  // gap: 50px;
 
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
+  list-style: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
 }
 
 .site-nav__link {
   display: block;
 
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.142;
+  font-size: 40px;
+  line-height: 1.175;
   letter-spacing: 0.02em;
   color: text(titel-black);
   text-decoration: none;
 
   transition: color 250ms $cubic;
-  
+
   &:hover,
   &:focus {
     color: $hover-blue;
   }
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
 }
+
 .current-page {
   position: relative;
 }
@@ -37,8 +48,15 @@
   height: 4px;
   position: absolute;
   left: 0;
-  top: 45px;
 
   border-radius: 2px;
   background-color: $hover-blue;
+
+  @media screen and (min-width: 768px) {
+    top: 35px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    top: 45px;
+  }
 }

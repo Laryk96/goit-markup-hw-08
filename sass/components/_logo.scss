@@ -1,6 +1,6 @@
 .logo {
   display: inline-block;
-  margin-right: 91px;
+  // margin-right: 91px;
 
   font-family: "Raleway";
   font-weight: 700;
@@ -16,4 +16,8 @@
 .footer__logo {
   color: logo(footer-white);
   margin-bottom: 20px;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }

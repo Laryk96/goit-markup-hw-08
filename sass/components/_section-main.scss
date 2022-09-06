@@ -1,8 +1,6 @@
 .main-section {
-  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  padding: 200px 0;
 
   text-align: center;
   background-color: $alt-bgd;
@@ -12,21 +10,43 @@
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/hero/hero.jpg);
+  background-position: center;
+  background-size: cover;
+
+  @media screen and (max-width: 767px) {
+    max-width: 480px;
+    padding: 118px 60px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    max-width: 1199px;
+    height: 400px;
+    padding: 118px 204px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+    padding: 200px 0;
+  }
 }
 
 .main-section__title {
-  width: 696px;
-  height: 120px;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 30px;
 
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   line-height: 1.363;
   color: text(other-white);
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-}
 
+  @media screen and (min-width: 1200px) {
+    font-weight: 900;
+    font-size: 44px;
+    width: 696px;
+    height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
