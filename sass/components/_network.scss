@@ -31,3 +31,23 @@
 .network__icon {
   fill: currentColor;
 }
+
+// network header
+
+.network-header {
+  display: none;
+  list-style: none;
+
+  @media screen and (max-width: 767px) {
+    display: flex;
+    gap: 20px;
+  }
+}
+.network-header__item {
+}
+.network-header__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.222;
+  color: $hover-blue;
+}

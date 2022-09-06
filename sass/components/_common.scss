@@ -7,7 +7,6 @@
   // padding-top: 0;
 }
 
-
 .section--display-none {
   @media (max-width: 1199px) {
     display: none;
@@ -40,4 +39,3 @@
   @include tablet-use;
   @include desktop-use;
 }
-

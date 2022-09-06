@@ -1,7 +1,4 @@
 .site-nav {
-  // display: flex;
-  // gap: 50px;
-
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
@@ -12,6 +9,14 @@
     display: flex;
     align-items: center;
     gap: 50px;
+  }
+}
+
+.site-nav__item {
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 32px;
+    }
   }
 }
 
@@ -52,11 +57,11 @@
   border-radius: 2px;
   background-color: $hover-blue;
 
-  @media screen and (min-width: 768px) {
-    top: 35px;
+  @media screen and (max-width: 767px) {
+    display: none;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     top: 45px;
   }
 }
