@@ -34,5 +34,7 @@
 }
 
 .page-header__nav {
- margin-bottom: 302px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 302px;
+  }
 }

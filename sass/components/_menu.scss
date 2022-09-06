@@ -3,8 +3,8 @@
   display: none;
 
   &.is-open {
+    display: block;
     @media screen and (max-width: 767px) {
-      display: block;
       position: absolute;
       top: 100%;
       left: 0%;
@@ -24,4 +24,3 @@
     margin-left: 67px;
   }
 }
-

@@ -175,17 +175,21 @@ img {
   }
 }
 
-.page-header__nav {
-  margin-bottom: 302px;
+@media screen and (max-width: 767px) {
+  .page-header__nav {
+    margin-bottom: 302px;
+  }
 }
 
 .menu-container {
   width: 100%;
   display: none;
 }
+.menu-container.is-open {
+  display: block;
+}
 @media screen and (max-width: 767px) {
   .menu-container.is-open {
-    display: block;
     position: absolute;
     top: 100%;
     left: 0%;
