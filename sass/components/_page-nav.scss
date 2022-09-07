@@ -3,12 +3,10 @@
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-  list-style: none;
 
   @media screen and (min-width: 768px) {
-    display: flex;
+    @include flex-gap(50px);
     align-items: center;
-    gap: 50px;
   }
 }
 
@@ -28,9 +26,8 @@
   line-height: 1.175;
   letter-spacing: 0.02em;
   color: text(titel-black);
-  text-decoration: none;
 
-  transition: color 250ms $cubic;
+  transition: color $animation;
 
   &:hover,
   &:focus {

@@ -11,6 +11,11 @@
   border: none;
   background-color: transparent;
   z-index: 20;
+
+  &.is-open {
+    position: fixed;
+    right: 15px;
+  }
   @media screen and (min-width: 768px) {
     display: none;
   }
@@ -22,6 +27,8 @@
   transition: transform 300ms $cubic;
   .btn-menu.is-open & {
     transform: rotateY(-180deg);
+    position: relative;
+    right: 0;
   }
 }
 
@@ -85,7 +92,7 @@
   &:active {
     background-color: btn(active-blue);
   }
-  transition: color 250ms $cubic, background-color 150ms $cubic;
+  transition: color $animation, background-color 150ms $cubic;
 
   @media screen and (max-width: 768px) {
   }

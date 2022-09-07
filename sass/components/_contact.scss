@@ -1,6 +1,4 @@
 .contact {
-  text-decoration: none;
-  list-style: none;
 
   @media screen and (max-width:767px) {
     margin-bottom: 64px;
@@ -11,8 +9,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    display: flex;
-    gap: 30px;
+    @include flex-gap;
   }
 }
 
@@ -44,9 +41,8 @@
   line-height: 1.666;
   letter-spacing: 0.02em;
   color: text(main-gray);
-  text-decoration: none;
 
-  transition: color 250ms $cubic;
+  transition: color $animation;
 
   &:hover,
   &:focus-visible {

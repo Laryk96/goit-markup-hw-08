@@ -17,7 +17,6 @@
 }
 
 .footer__address-box {
-  text-align: center;
   width: 231px;
 
   @media screen and (max-width: 767px) {
@@ -39,10 +38,10 @@
 
 .footer__social-box {
   margin-bottom: 60px;
-  text-align: center;
 
   @media screen and(max-width:1199px) {
     margin-left: auto;
+    text-align: center;
   }
 }
 
@@ -54,7 +53,6 @@
   line-height: 1.142;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
   color: text(other-white);
 }
 
@@ -65,11 +63,11 @@
 */
 
 .footer__form-box {
-  text-align: center;
   margin-left: auto;
 
   @media screen and(max-width: 1199px) {
     width: 450px;
     margin-right: auto;
+    text-align: center;
   }
 }

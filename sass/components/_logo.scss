@@ -1,12 +1,10 @@
 .logo {
   display: inline-block;
-  // margin-right: 91px;
 
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.192;
-  text-decoration: none;
   color: logo(header-black);
 }
 .logo__label {
@@ -14,10 +12,11 @@
 }
 
 .footer__logo {
-  color: logo(footer-white);
-  margin-bottom: 20px;
-  text-align: center;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin-bottom: 20px;
+
+  color: logo(footer-white);
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }

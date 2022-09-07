@@ -1,19 +1,31 @@
 .project {
-  @include flex-gap;
-  flex-wrap: wrap;
+  @media screen and(min-width:768px) {
+    @include flex-gap;
+    flex-wrap: wrap;
+  }
 }
 
 .project__item {
-  flex-basis: calc((100% - 30px * 2) / 3);
   background-color: $card-bgd;
+
+  @media screen and(max-width:767px) {
+    width: 100%;
+  }
+
+  @media screen and(min-width:768px) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 30px * 2) / 3);
+  }
 }
 
 .project__link {
   display: block;
-  text-decoration: none;
-  
-  transition: box-shadow 250ms $cubic;
-  
+
+  transition: box-shadow $animation;
+
   &:hover,
   &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -29,7 +41,6 @@
 .project__overlay {
   position: absolute;
   @include centering-flex;
-  padding: 63px 24px;
 
   bottom: -1;
   left: 0;
@@ -42,11 +53,23 @@
   color: text(other-white);
   background-color: overlay(sky);
 
-  transition: transform 250ms $cubic;
+  transition: transform $animation;
 
   .project__link:hover &,
   .project__link:focus & {
     transform: translateY(-100%);
+
+    @media screen and (max-width: 767px) {
+      padding: 77px 24px;
+    }
+  }
+
+  @media screen and (min-width: 767px) and (max-width: 1199px) {
+    padding: 49px 24px 77px 24px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 63px 24px;
   }
 }
 

@@ -4,8 +4,6 @@ form {
 
 .form__fieldset {
   margin-bottom: 20px;
-
-  list-style: none;
 }
 
 .form__field {
@@ -35,7 +33,7 @@ form {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 
-  transition: border-color 250ms $cubic;
+  transition: border-color $animation;
 
   &:hover,
   &:focus {
@@ -52,7 +50,7 @@ form {
 
   fill: icon(icon-black);
 
-  transition: fill 250ms $cubic;
+  transition: fill $animation;
 
   .form__input:focus + & {
     fill: icon(active-blue);
@@ -68,7 +66,7 @@ form {
 
   resize: none;
 
-  transition: border-color 250ms $cubic;
+  transition: border-color $animation;
 
   &:focus,
   &:hover {
@@ -123,7 +121,7 @@ form {
   fill: icon(check-white);
   cursor: pointer;
 
-  transition: background-color 250ms $cubic, border-color 250ms $cubic;
+  transition: background-color  $animation, border-color $animation;
 
   &:focus,
   &:hover {
@@ -142,5 +140,4 @@ form {
   line-height: 1.714;
   letter-spacing: 0.03em;
   color: btn(active-blue);
-  text-decoration: none;
 }

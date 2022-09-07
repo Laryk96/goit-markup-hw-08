@@ -2,7 +2,6 @@
   @include centering-flex;
   gap: 10px;
 
-  list-style: none;
 }
 
 .network__item {
@@ -15,7 +14,7 @@
   height: 44px;
   border-radius: 50%;
 
-  transition: color 250ms $cubic, background-color 250ms $cubic;
+  transition: color  $animation, background-color $animation;
 
   &:hover,
   &:focus {
@@ -36,11 +35,9 @@
 
 .network-header {
   display: none;
-  list-style: none;
 
   @media screen and (max-width: 767px) {
-    display: flex;
-    gap: 20px;
+   @include flex-gap;
   }
 }
 .network-header__item {

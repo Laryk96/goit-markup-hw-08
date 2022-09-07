@@ -18,7 +18,6 @@
 @mixin flex-gap($gap: 30px) {
   display: flex;
   gap: $gap;
-  list-style: none;
 }
 
 @mixin mobail-use($width: 480px) {

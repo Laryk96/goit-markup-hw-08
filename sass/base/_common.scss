@@ -1,0 +1,94 @@
+body {
+  color: text(main-gray);
+  font-family: $font-main;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: $header-height;
+  }
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h5,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.section {
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.saction--no-padding-top {
+  padding-top: 0;
+}
+
+.section--display-none {
+  @media (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.section--other-bgd {
+  background-color: $team-bgd;
+}
+
+.section__title {
+  text-align: center;
+  font-weight: 900px;
+  letter-spacing: 0.03em;
+  color: text(titel-black);
+
+  @media screen and (max-width: 1199px) {
+    font-size: 28px;
+    line-height: 1.176;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.166;
+    margin-bottom: 50px;
+  }
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include mobail-use;
+  @include tablet-use;
+  @include desktop-use;
+}

@@ -3,7 +3,6 @@
   flex-wrap: wrap;
   justify-content: center;
 
-  list-style: none;
 }
 
 .client__item {
@@ -31,7 +30,7 @@
   border-radius: 4px;
   color: icon(fill-gray);
 
-  transition: color 250ms $cubic, border-color 250ms $cubic;
+  transition: color $animation, border-color $animation;
 
   &:hover,
   &:focus {
