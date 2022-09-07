@@ -37,15 +37,16 @@
     transform: translate(-50%, -200%) scale(0.1);
   }
 
-  @media screen and (max-width: 1199px) {
-    width: 450px;
-    height: 609px;
-  }
   @media screen and (min-width: 768px) {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
+  }
+
+  @media screen and (max-width: 1199px) {
+    width: 450px;
+    height: 609px;
   }
 
   @media screen and (min-width: 1200px) {

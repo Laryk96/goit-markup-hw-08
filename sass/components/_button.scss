@@ -10,13 +10,19 @@
   padding: 0;
   border: none;
   background-color: transparent;
-
+  z-index: 20;
   @media screen and (min-width: 768px) {
     display: none;
   }
 }
 
 .btn-menu__icon-set {
+  transform-style: preserve-3d;
+
+  transition: transform 300ms $cubic;
+  .btn-menu.is-open & {
+    transform: rotateY(-180deg);
+  }
 }
 
 .btn-menu__cross {
@@ -28,6 +34,7 @@
 }
 
 .btn-menu__menu {
+  transform: rotateY(0deg);
   .btn-menu.is-open & {
     display: none;
   }
@@ -49,6 +56,7 @@
   @media screen and (min-width: 1200px) {
     padding: 10px 32px;
     min-width: 216px;
+    height: auto;
   }
 }
 
@@ -93,7 +101,6 @@
   fill: currentColor;
 }
 
-
 /**
   |============================
   |   Subscribe 
@@ -111,7 +118,3 @@
   margin-left: 10px;
   fill: currentColor;
 }
-
-
-
-
