@@ -1,10 +1,10 @@
-.footer {
+.page-footer {
   background-color: $bgd-footer;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-.footer__container {
+.page-footer__container {
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: baseline;
@@ -16,7 +16,7 @@
   }
 }
 
-.footer__address-box {
+.page-footer__address-box {
   width: 231px;
 
   @media screen and (max-width: 767px) {
@@ -36,7 +36,7 @@
   |============================
 */
 
-.footer__social-box {
+.page-footer__social-box {
   margin-bottom: 60px;
 
   @media screen and(max-width:1199px) {
@@ -45,7 +45,7 @@
   }
 }
 
-.footer__title {
+.page-footer__title {
   margin-bottom: 20px;
 
   font-weight: 700;
@@ -62,11 +62,10 @@
   |============================
 */
 
-.footer__form-box {
+.page-footer__form-box {
   margin-left: auto;
 
   @media screen and(max-width: 1199px) {
-    width: 450px;
     margin-right: auto;
     text-align: center;
   }

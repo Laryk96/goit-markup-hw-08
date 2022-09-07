@@ -1,6 +1,7 @@
 .network {
   @include centering-flex;
   gap: 10px;
+  flex-wrap: wrap;
 
 }
 
@@ -31,20 +32,3 @@
   fill: currentColor;
 }
 
-// network header
-
-.network-header {
-  display: none;
-
-  @media screen and (max-width: 767px) {
-   @include flex-gap;
-  }
-}
-.network-header__item {
-}
-.network-header__link {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.222;
-  color: $hover-blue;
-}

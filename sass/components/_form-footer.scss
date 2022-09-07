@@ -38,3 +38,23 @@
     width: 358px;
   }
 }
+
+/**
+  |============================
+  | button 
+  |============================
+*/
+
+.btn-subscribe {
+  @extend %btn;
+  @include centering-flex();
+  padding: 10px 28px;
+  @media screen and (max-width: 1199px) {
+    margin: 0 auto;
+  }
+}
+
+.btn-subscribe__icon {
+  margin-left: 10px;
+  fill: currentColor;
+}
