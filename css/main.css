@@ -174,9 +174,11 @@ img {
   }
 }
 
+.menu-container {
+  width: 100%;
+}
 @media screen and (max-width: 767px) {
   .menu-container {
-    width: 100%;
     min-height: 100vh;
     position: fixed;
     top: 0;
@@ -324,7 +326,6 @@ img {
 @media screen and (min-width: 768px) {
   .contact {
     margin-left: auto;
-    display: block;
   }
 }
 @media screen and (min-width: 1200px) {
