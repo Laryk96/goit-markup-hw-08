@@ -844,12 +844,28 @@ img {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .page-footer__container {
+    padding-left: 76px;
+    padding-right: 89px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    height: 463px;
   }
 }
 
+.page-footer__title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+/**
+  |============================
+  | address
+  |============================
+*/
 .page-footer__address-box {
   width: 231px;
 }
@@ -881,16 +897,6 @@ img {
   }
 }
 
-.page-footer__title {
-  margin-bottom: 20px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.142;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-
 /**
   |============================
   |    Form
@@ -899,10 +905,18 @@ img {
 .page-footer__form-box {
   margin-left: auto;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .page-footer__form-box {
+    padding-top: 60px;
+    width: 450px;
+  }
+}
 @media screen and (max-width: 1199px) {
   .page-footer__form-box {
     margin-right: auto;
     text-align: center;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
   }
 }
 

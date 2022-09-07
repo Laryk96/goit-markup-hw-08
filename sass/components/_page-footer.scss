@@ -11,10 +11,28 @@
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-left: 76px;
+    padding-right: 89px;
     flex-wrap: wrap;
-    height: 463px;
   }
 }
+
+.page-footer__title {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: text(other-white);
+}
+
+/**
+  |============================
+  | address
+  |============================
+*/
 
 .page-footer__address-box {
   width: 231px;
@@ -45,17 +63,6 @@
   }
 }
 
-.page-footer__title {
-  margin-bottom: 20px;
-
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.142;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: text(other-white);
-}
-
 /**
   |============================
   |    Form
@@ -65,8 +72,14 @@
 .page-footer__form-box {
   margin-left: auto;
 
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-top: 60px;
+    width: 450px;
+  }
+
   @media screen and(max-width: 1199px) {
     margin-right: auto;
     text-align: center;
+    align-self: flex-end;
   }
 }
