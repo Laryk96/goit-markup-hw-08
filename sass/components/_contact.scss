@@ -1,7 +1,8 @@
 .contact {
-
-  @media screen and (max-width:767px) {
+  @media screen and (max-width: 767px) {
     margin-bottom: 64px;
+    display: flex;
+    flex-direction: column-reverse;
   }
 
   @media screen and (min-width: 768px) {
@@ -14,22 +15,21 @@
 }
 
 .contact__item {
-  &:first-child {
+  &:last-child {
     @media screen and (max-width: 767px) {
       font-size: 34px;
       line-height: 1.176;
-      color: $hover-blue;
       margin-bottom: 32px;
     }
   }
 
-  &:last-child {
+  &:first-child {
     @media screen and (max-width: 767px) {
       font-size: 24px;
     }
   }
 
-  &:first-child {
+  &:last-child {
     @media screen and (min-width: 768px) and (max-width: 1199px) {
       margin-bottom: 10px;
     }
