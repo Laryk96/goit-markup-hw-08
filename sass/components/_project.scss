@@ -8,6 +8,12 @@
 .project__item {
   background-color: $card-bgd;
 
+  &:not(:last-child) {
+    @media screen and(max-width:767px) {
+      margin-bottom: 30px;
+    }
+  }
+
   @media screen and(max-width:767px) {
     width: 100%;
   }
@@ -23,7 +29,10 @@
 
 .project__link {
   display: block;
-
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 100%;
   transition: box-shadow $animation;
 
   &:hover,
@@ -75,7 +84,7 @@
 
 .project__desc {
   padding: 20px 24px;
-
+  flex-grow: 1;
   @include border-desc();
 }
 

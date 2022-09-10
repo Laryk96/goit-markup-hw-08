@@ -2,7 +2,6 @@
   @include centering-flex;
   gap: 10px;
   flex-wrap: wrap;
-
 }
 
 .network__item {
@@ -14,8 +13,9 @@
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  background-color: icon(bgd-footer-gray);
 
-  transition: color  $animation, background-color $animation;
+  transition: color $animation, background-color $animation;
 
   &:hover,
   &:focus {
@@ -31,4 +31,3 @@
 .network__icon {
   fill: currentColor;
 }
-

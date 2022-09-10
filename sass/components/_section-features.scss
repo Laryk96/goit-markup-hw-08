@@ -10,7 +10,6 @@
 
 .features__item {
   @media screen and (max-width: 767px) {
-    text-align: center;
     &:not(:last-child) {
       margin-bottom: 30px;
     }
@@ -44,6 +43,10 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: text(titel-black);
+
+  @media screen and(max-width:767px) {
+    text-align: center;
+  }
 }
 
 .features__desc {

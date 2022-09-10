@@ -40,6 +40,10 @@
 
 .current-page {
   position: relative;
+
+  @media screen and(max-width:767px) {
+    color: $hover-blue;
+  }
 }
 
 .current-page::after {
