@@ -37,6 +37,12 @@ img {
   height: auto;
 }
 
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .section {
   @media screen and (max-width: 1199px) {
     padding-top: 60px;
