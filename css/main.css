@@ -331,6 +331,10 @@ img {
   }
 }
 
+.network-text__item {
+  position: relative;
+}
+
 .network-text__link {
   display: block;
   font-weight: 500;
@@ -338,6 +342,20 @@ img {
   line-height: 1.222;
   color: #2196f3;
   width: 100%;
+}
+
+.network-text__link--separator::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 50%;
+  right: -26px;
+  width: 22px;
+  height: 0;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  color: red;
 }
 
 .site-nav {
