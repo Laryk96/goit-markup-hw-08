@@ -19,7 +19,7 @@
       url(../images/main/mobail-bgd.jpg) 1x
     );
 
-  @media screen and (min-width: 768px) and (max-width: 959px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -39,8 +39,6 @@
         rgba(47, 48, 58, 0.4)
       ),
       image-set(
-        url(../images/main/desktop-bgd@2x.webp) type(image/webp) 2x,
-        url(../images/main/desktop-bgd.webp) type(image/webp) 1x,
         url(../images/main/desktop-bgd@2x.jpg) 2x,
         url(../images/main/desktop-bgd.jpg) 1x
       );
