@@ -25,6 +25,10 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: text(other-white);
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 /**
@@ -55,10 +59,6 @@
   @media screen and (max-width: 767px) {
     margin-bottom: 60px;
   }
-
-  @media screen and(max-width:1199px) {
-    text-align: center;
-  }
 }
 
 /**
@@ -76,5 +76,4 @@
   @media screen and (min-width: 1200px) {
     margin-left: auto;
   }
-
 }

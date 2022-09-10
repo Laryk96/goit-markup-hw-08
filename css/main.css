@@ -925,6 +925,11 @@ img {
   text-transform: uppercase;
   color: #ffffff;
 }
+@media screen and (max-width: 1199px) {
+  .page-footer__title {
+    text-align: center;
+  }
+}
 
 /**
   |============================
@@ -950,11 +955,6 @@ img {
 @media screen and (max-width: 767px) {
   .page-footer__social-box {
     margin-bottom: 60px;
-  }
-}
-@media screen and (max-width: 1199px) {
-  .page-footer__social-box {
-    text-align: center;
   }
 }
 
