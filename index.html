@@ -189,42 +189,86 @@
           <ul class="work">
             <li class="work__item">
               <div class="work__tumb">
-                <img
-                  srcset="
-                    ./images/work/img-1@2x.jpg 2x,
-                    ./images/work/img-1.jpg    1x
-                  "
-                  src="./images/work/img-1.jpg"
-                  alt="Робота за двома комп'ютерамии,один має великий єкран,а другий(планшет)лежить знизу,поряд клавіатура та вимкнений монітор ще одного комп'ютера"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/work/img-1@3x.webp 3x,
+                      ./images/work/img-1@2x.webp 2x,
+                      ./images/work/img-1.webp    1x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/work/img-1@3x.jpg 3x,
+                      ./images/work/img-1@2x.jpg 2x,
+                      ./images/work/img-1.jpg    1x
+                    "
+                  />
+                  <img
+                    src="./images/work/img-1.jpg"
+                    width="370"
+                    height="294"
+                    alt="Робота за двома комп'ютерамии,один має великий єкран,а другий(планшет)лежить знизу,поряд клавіатура та вимкнений монітор ще одного комп'ютера"
+                  />
+                </picture>
                 <p class="work__overlay">Десктопні додатки</p>
               </div>
             </li>
             <li class="work">
               <div class="work__tumb">
-                <img
-                  srcset="
-                    ./images/work/img-2@2x.jpg 2x,
-                    ./images/work/img-2.jpg    1x
-                  "
-                  src="./images/work/img-2.jpg"
-                  alt="Частково видно жінку, яка працює за ноутбуком, тримаючи в лівій руці смартфон.Зліва від неї знаходиться велий єкран для презентацій, на ньому зображено три єкрани смартфонів"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/work/img-2@3x.webp 3x,
+                      ./images/work/img-2@2x.webp 2x,
+                      ./images/work/img-2.webp    1x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/work/img-2@3x.jpg 3x,
+                      ./images/work/img-2@2x.jpg 2x,
+                      ./images/work/img-2.jpg    1x
+                    "
+                  />
+                  <img
+                    src="./images/work/img-2.jpg"
+                    width="370"
+                    height="294"
+                    alt="Частково видно жінку, яка працює за ноутбуком, тримаючи в лівій руці смартфон.Зліва від неї знаходиться велий єкран для презентацій, на ньому зображено три єкрани смартфонів"
+                  />
+                </picture>
                 <p class="work__overlay">Мобільні додатки</p>
               </div>
             </li>
             <li class="work">
               <div class="work__tumb">
-                <img
-                  srcset="
-                    ./images/work/img-3@2x.jpg 2x,
-                    ./images/work/img-3.jpg    1x
-                  "
-                  src="./images/work/img-3.jpg"
-                  alt="Людина тримає у руках планшет, на ньму зображена палітра кольорів,у правій руці олівець дя пленшету"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/work/img-3@3x.webp 3x,
+                      ./images/work/img-3@2x.webp 2x,
+                      ./images/work/img-3.webp    1x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/work/img-3@3x.jpg 3x,
+                      ./images/work/img-3@2x.jpg 2x,
+                      ./images/work/img-3.jpg    1x
+                    "
+                  />
+                  <img
+                    src="./images/work/img-3.jpg"
+                    width="370"
+                    height="294"
+                    alt="Людина тримає у руках планшет, на ньму зображена палітра
+                кольорів,у правій руці олівець дя пленшету"
+                  />
+                </picture>
                 <p class="work__overlay">Дизайнерські рішення</p>
               </div>
             </li>
@@ -237,6 +281,37 @@
           <ul class="team">
             <li class="team__item">
               <picture class="img">
+                <source
+                  srcset="
+                    ./images/team/desktop/product-designer-270@1x.webp  270w,
+                    ../images/team/desktop/product-designer-540@2x.webp 540w,
+                    ./images/team/desktop/product-designer-810@3x.webp  810w
+                  "
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                  sizes="(min-width: 1200px) 270px, 30vw"
+                />
+                <source
+                  srcset="
+                    ./images/team/tablet/product-designer-354@1x.webp   354w,
+                    ../images/team/tablet/product-designer-708@2x.webp  708w,
+                    ./images/team/tablet/product-designer-1062@3x.webp 1062w
+                  "
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                  sizes="(min-width: 768px) 354px, 46vw"
+                />
+                <source
+                  srcset="
+                    ./images/team/mobail/product-designer-450@1x.webp   450w,
+                    ../images/team/mobail/product-designer-900@2x.webp  900w,
+                    ./images/team/mobail/product-designer-1350@3x.webp 1350w
+                  "
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                  sizes="(min-width: 480px) 450px, 100vw"
+                />
+
                 <source
                   srcset="
                     ./images/team/desktop/product-designer-270@1x.jpg  270w,
@@ -328,6 +403,36 @@
             </li>
             <li class="team__item">
               <picture class="img">
+                <source
+                  srcset="
+                    ./images/team/desktop/frontend-developer-270@1x.webp  270w,
+                    ../images/team/desktop/frontend-developer-540@2x.webp 540w,
+                    ./images/team/desktop/frontend-developer-810@3x.webp  810w
+                  "
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                  sizes="(min-width: 1200px) 270px, 30vw"
+                />
+                <source
+                  srcset="
+                    ./images/team/tablet/frontend-developer-354@1x.webp   354w,
+                    ../images/team/tablet/frontend-developer-708@2x.webp  708w,
+                    ./images/team/tablet/frontend-developer-1062@3x.webp 1062w
+                  "
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                  sizes="(min-width: 768px) 354px, 46vw"
+                />
+                <source
+                  srcset="
+                    ./images/team/mobail/frontend-developer-450@1x.webp   450w,
+                    ../images/team/mobail/frontend-developer-900@2x.webp  900w,
+                    ./images/team/mobail/frontend-developer-1350@3x.webp 1350w
+                  "
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                  sizes="(min-width: 480px) 450px, 100vw"
+                />
                 <source
                   srcset="
                     ./images/team/desktop/frontend-developer-270@1x.jpg  270w,
@@ -422,6 +527,36 @@
               <picture class="img">
                 <source
                   srcset="
+                    ./images/team/desktop/marketing-270@1x.webp  270w,
+                    ../images/team/desktop/marketing-540@2x.webp 540w,
+                    ./images/team/desktop/marketing-810@3x.webp  810w
+                  "
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                  sizes="(min-width: 1200px) 270px, 30vw"
+                />
+                <source
+                  srcset="
+                    ./images/team/tablet/marketing-354@1x.webp   354w,
+                    ../images/team/tablet/marketing-708@2x.webp  708w,
+                    ./images/team/tablet/marketing-1062@3x.webp 1062w
+                  "
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                  sizes="(min-width: 768px) 354px, 46vw"
+                />
+                <source
+                  srcset="
+                    ./images/team/mobail/marketing-450@1x.webp   450w,
+                    ../images/team/mobail/marketing-900@2x.webp  900w,
+                    ./images/team/mobail/marketing-1350@3x.webp 1350w
+                  "
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                  sizes="(min-width: 480px) 450px, 100vw"
+                />
+                <source
+                  srcset="
                     ./images/team/desktop/marketing-270@1x.jpg  270w,
                     ../images/team/desktop/marketing-540@2x.jpg 540w,
                     ./images/team/desktop/marketing-810@3x.jpg  810w
@@ -512,6 +647,36 @@
             </li>
             <li class="team__item">
               <picture class="img">
+                <source
+                  srcset="
+                    ./images/team/desktop/ui-designer-270@1x.webp  270w,
+                    ../images/team/desktop/ui-designer-540@2x.webp 540w,
+                    ./images/team/desktop/ui-designer-810@3x.webp  810w
+                  "
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                  sizes="(min-width: 1200px) 270px, 30vw"
+                />
+                <source
+                  srcset="
+                    ./images/team/tablet/ui-designer-354@1x.webp   354w,
+                    ../images/team/tablet/ui-designer-708@2x.webp  708w,
+                    ./images/team/tablet/ui-designer-1062@3x.webp 1062w
+                  "
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                  sizes="(min-width: 768px) 354px, 46vw"
+                />
+                <source
+                  srcset="
+                    ./images/team/mobail/ui-designer-450@1x.webp   450w,
+                    ../images/team/mobail/ui-designer-900@2x.webp  900w,
+                    ./images/team/mobail/ui-designer-1350@3x.webp 1350w
+                  "
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                  sizes="(min-width: 480px) 450px, 100vw"
+                />
                 <source
                   srcset="
                     ./images/team/desktop/ui-designer-270@1x.jpg  270w,
