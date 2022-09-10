@@ -19,7 +19,7 @@
       url(../images/main/mobail-bgd.jpg) 1x
     );
 
-  @media screen and (min-width: 578px) and (max-width: 959px) {
+  @media screen and (min-width: 768px) and (max-width: 959px) {
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -31,7 +31,7 @@
       );
   }
 
-  @media screen and (min-width: 960px) {
+  @media screen and (min-width: 1200px) {
     padding: 200px 0;
     background-image: linear-gradient(
         to right,
