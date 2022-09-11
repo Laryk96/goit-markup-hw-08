@@ -4,6 +4,13 @@
   padding-bottom: 60px;
 }
 
+.footer-bottom{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
+}
+
 .page-footer__container {
   @media screen and (min-width: 768px) {
     display: flex;
