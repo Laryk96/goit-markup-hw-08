@@ -1,0 +1,45 @@
+.footer {
+  background-color: $bgd-footer;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer__container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer__address-box {
+  margin-right: 67px;
+}
+
+
+/**
+  |============================
+  |     Social
+  |============================
+*/
+
+.footer__social-box {
+  margin-right: 96px;
+}
+.footer__title {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: text(other-white);
+}
+
+/**
+  |============================
+  |    Form
+  |============================
+*/
+.footer__form-box {
+}
+
